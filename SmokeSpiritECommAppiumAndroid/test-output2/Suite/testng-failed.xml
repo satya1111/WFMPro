@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="4" name="Parallel(failed)" parallel="methods">
+    <parameter name="platformVersion" value="5.1.1"/>
+    <parameter name="appURL" value="https://spencergiftdev-wfm01.cloud.infor.com"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="emulator-5554"/>
+    <parameter name="device" value="Android Emulator"/>
+    <classes>
+      <class name="driverscript.DriverClass">
+        <methods>
+          <include name="initializeDriver"/>
+          <include name="Chrome"/>
+          <include name="Safari"/>
+          <include name="IE"/>
+          <include name="CloseReport"/>
+          <include name="Android"/>
+          <include name="Firefox"/>
+          <include name="iOS"/>
+        </methods>
+      </class> <!-- driverscript.DriverClass -->
+    </classes>
+  </test> <!-- Parallel(failed) -->
+</suite> <!-- Failed suite [Suite] -->

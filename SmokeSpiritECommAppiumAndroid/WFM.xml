@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" thread-count="4" parallel="methods">
+
+   <test name="Parallel">
+    <classes>
+     <class name="driverscript.DriverClass"/>
+      <parameter name="appURL" value= "https://spencergiftdev-wfm01.cloud.infor.com"/>
+      <parameter name="deviceName" value="emulator-5554" />
+      <parameter name="platformName" value="Android"/>
+      <parameter name="device" value="Android Emulator"/>
+      <parameter name="platformVersion" value="5.1.1"/>
+    </classes>
+  </test>  
+ 
+</suite> 
